@@ -1,0 +1,445 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(200, 15%, 8%);
+  background-color: #fcf8e8;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+a {
+  transition: transform .3s;
+}
+
+a:hover {
+  text-decoration: none;
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* ****************************************** Navbar ***************************************** */
+.navbar-light {
+  z-index: 2;
+  box-shadow: 0px 1px 2px 2px #ece5e5;
+}
+
+.navbar-collapse {
+  line-height: 2;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dark {
+  position: fixed;
+  top: 4%;
+  right: 10.5%;
+  z-index: 3;
+  color: rgb(17, 21, 23);
+}
+
+.dark:hover {
+  text-decoration: none;
+  color: rgb(17, 21, 23);
+}
+
+/* ************************************** About Section **************************************/
+#aboutSection {
+  background-color: #fcf8e8;
+  position: relative;
+  margin: 0.5% 0 0 0;
+  padding: 8% 0 2% 0;
+}
+
+.profileImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0
+}
+
+.profileImg {
+  width: 60%;
+  height: 61%;
+  border-radius: 55%;
+  margin: 10px;
+}
+
+.socialMediaDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.socialIcon {
+  margin-right: 20%;
+}
+
+.aboutMeDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 2.5%;
+}
+
+.educationDiv {
+  padding-left: 3%;
+}
+
+.instituteName {
+  padding-left: 7%;
+}
+
+/* *********************************** Experience Section *************************************/
+#expSection {
+  position: relative;
+  top: 90px;
+  background-color: #ecdfc8;
+  padding: 3.5% 0 7% 0;
+}
+
+/* typewriter style */
+.typewriterDiv {
+  text-align: center;
+  margin: 1.4% 0;
+  margin-bottom: 3%;
+}
+
+.typewriter {
+  display: inline-block;
+}
+
+.typewriter h1 {
+  display: inline-block;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .12em;
+  animation:
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
+  }
+}
+/* typewriter style ends*/
+
+.experience {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ball style */
+.h-40 {
+  height: 40%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.experience .m-0 .border.exp-fill {
+  background-color: #2962ff !important;
+}
+
+.experience .m-0 .border, .experience .col.border-right {
+  border-color: #2962ff !important;
+}
+
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+.ball-pill {
+  padding: 0.25em 0.7em;
+  border-radius: 50%;
+}
+/* Ball style ends */
+
+.expCardCol {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.expCard {
+  border-radius: 22px;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+  margin: 2% 5px;
+  width: 100%;
+}
+
+.jobHeading {
+  margin: 0
+}
+
+.expImgDiv {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expImg {
+  height: 100%;
+  width: 100%;
+}
+
+/* ************************************** Projects Section ***********************************/
+#projectSection {
+  position: relative;
+  top: 50px;
+  padding: 3.5% 0 10% 0;
+  background-color: #fcf8e8;
+}
+
+.btn-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.activeBtn {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.btn-toolbar .btn-lg {
+  padding: 1px 10px;
+}
+
+.gridContainer {
+  height: 100%;
+  padding: 0 5%;
+}
+
+.isoGrid {
+  text-align: center;
+  height: 100%;
+}
+
+.isoGrid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 32%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.grid-item .card {
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1% 1% 1%;
+}
+
+.grid-item .card:hover{
+  cursor: pointer;
+}
+
+.grid-item img {
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* *******************************************************Footer Section *****************************************************/
+#footer {
+  position: relative;
+  background-color: #ecdfc8;
+  padding: 3.5% 0 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#footer p{
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+#footer p .socialIcon{
+  margin-right: 1%;
+  font-size: 1.3rem;
+}
+
+/* Dark Mode CSS */
+.bodyDark{
+  background-color: #272935 !important;
+  color: white;
+}
+
+.expSectionDark{
+  background-color: #23252f !important;
+}
+
+.cardDark{
+  background-color: #343a40;
+}
+
+.text-muted-dark{
+  color: #c6d0d8 !important;
+}
+/*
+.headingDark{
+  color: #98a6ad;
+} */
+
+@media screen and (max-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    top: 1px;
+    right: 40%;
+  }
+
+  .profileImg{
+    width: 95%;
+  }
+
+  .experience {
+    width: 100%;
+  }
+
+  .grid-item{
+    width: 47%;
+  }
+}
+
+
+/* Scroll To Top Button */
+#scrollToTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #FF9800;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#scrollToTop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#scrollToTop:active {
+  background-color: #555;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 450px) {
+  .navbar-brand{
+    font-size: 1.2rem;
+    top: 9px;
+    right: 35%;
+  }
+
+  .dark{
+    font-size: 0.8rem;
+  }
+
+  .profileImg{
+    width: 40%;
+    margin-top: 50px;
+  }
+
+  .headingDiv{
+    text-align: center;
+    margin: auto;
+  }
+
+  h5{
+    font-size: 1.1rem;
+  }
+
+  .ballCol{
+    display: none;
+  }
+
+  #projectSection{
+    padding: 3.5% 0 20% 0;
+  }
+
+  .btn-group .btn{
+    font-size: 0.8rem;
+  }
+
+  .gridContainer{
+    padding: 0;
+  }
+
+  .grid-item{
+    width: 100%;
+  }
+}
