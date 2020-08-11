@@ -36,17 +36,20 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#aboutSection">About <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#expSection">Experience </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#projectSection">Projects</a>
             </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#footer">Contact me</a>
+            </li>
             <li>
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link" href="#" style="cursor: not-allowed">Resume</a>
             </li>
           </ul>
         </div>
@@ -65,11 +68,11 @@
           <img class="profileImg" src="./images/profile.jpg" alt="">
           <h2>Parth Gupta</h2>
           <h4 class="text-muted">Student</h4>
-          <a href="http://dtu.ac.in/" style="font-size: 3.1vh; margin-bottom: 10px;" target="_blank">Delhi Technological University</a>
+          <a href="http://dtu.ac.in/" style="font-size: 3.1vh; margin-bottom: 10px;" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">Delhi Technological University</a>
           <div class="socialMediaDiv">
-            <a class="socialIcon" href="mailto:parth1716@gmail.com" target="_blank"><span><i class="fas fa-envelope"></i></span></a>
-            <a class="socialIcon" href="https://linkedin.com/in/parth-gupta-6754871a4" target="_blank"> <span><i class="fab fa-linkedin-in"></i></span></a>
-            <a class="socialIcon" href="https://github.com/Parth-Gupta10" target="_blank"> <span><i class="fab fa-github"></i></span></a>
+            <a class="socialIcon" href="mailto:parth1716@gmail.com" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"><span><i class="fas fa-envelope"></i></span></a>
+            <a class="socialIcon" href="https://linkedin.com/in/parth-gupta-6754871a4" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"> <span><i class="fab fa-linkedin-in"></i></span></a>
+            <a class="socialIcon" href="https://github.com/Parth-Gupta10" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"> <span><i class="fab fa-github"></i></span></a>
           </div>
         </div>
 
@@ -78,9 +81,9 @@
             <h1 class="card-tilte" style="margin-bottom: 15px; font-weight: 500;">About Me</h1>
           </div>
           <p class="card-text">
-            I am a 1st year student at Delhi Technological University, pursuing B.Tech in Mechanical Engineering.
-            I’m proficient in HTML, CSS and JavaScript, and I have beginner-level proficiency in Node js. I would love to expand my web developer skills to include
-            React js and MongoDB.
+            I am a 2nd year student at Delhi Technological University, pursuing B.Tech in Mechanical Engineering.
+            I’m proficient in HTML, CSS, JavaScript, Bootstrap and jQuery, and have intermediate-level proficiency in ReactJs. I would love to expand my web developer skills to include
+            Node.js and MongoDB.
           </p>
           <h3 style="font-weight: 600; margin-bottom: 15px;">Education</h3>
           <div class="educationDiv">
@@ -156,7 +159,7 @@
                   <h5 class="card-title text-muted" style="font-weight: 400">Anetazo Technologies</h5>
                   <div class="card-text">
                     <p>
-                      Worked on a live ongoing project and also developed a food ordering website for local restaurant using whatsapp's click to chat feature to place order online.
+                      Worked on a live ongoing project and also developed a food ordering website for local restaurants using "whatsapp's click to chat feature" to place order online using whatsapp.
                     </p>
                   </div>
                 </div>
@@ -185,10 +188,9 @@
       <div class="btn-toolbar">
         <div class="btn-group">
           <button data-filter="*" class="btn btn-primary btn-lg activeBtn">All </button>
-          <button data-filter=".frontend" class="btn btn-primary btn-lg">Frontend </button>
+          <button data-filter=".react" class="btn btn-primary btn-lg">ReactJs </button>
           <button data-filter=".full-stack" class="btn btn-primary btn-lg">Full Stack </button>
-          <button data-filter=".landing-page" class="btn btn-primary btn-lg">Landing Pages </button>
-          <button data-filter=".game" class="btn btn-primary btn-lg">Games </button>
+          <button data-filter=".others" class="btn btn-primary btn-lg">Others </button>
         </div>
       </div>
 
@@ -197,9 +199,31 @@
       <div class="gridContainer">
         <div class="isoGrid">
           <div class="grid-sizer"></div>
-          <div class="grid-item frontend">
+          <div class="grid-item react full-stack">
+            <div class="card" onclick="window.open('https://parth-gupta10.github.io/Keeper-app/')">
+              <a href="https://parth-gupta10.github.io/Keeper-app/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="card-image hover-overlay">
+                <img src=".\images\project screenshots\keeper-app.png" alt="Fylo screenshot">
+              </a>
+              <div class="card-text">
+                <h4 class="card-title">Keeper App</h4>
+                <p class="text-muted">A web app to store notes and style their content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item react">
+            <div class="card" onclick="window.open('https://parth-gupta10.github.io/watch-e-commerce/')">
+              <a href="https://parth-gupta10.github.io/watch-e-commerce/" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
+                <img src=".\images\project screenshots\e-commerce.png" alt="Fylo screenshot">
+              </a>
+              <div class="card-text">
+                <h4 class="card-title">Styme</h4>
+                <p class="text-muted">A basic e-commerce web app with cart functionality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item others">
             <div class="card" onclick="window.open('https://parth-gupta10.github.io/world-mania/')">
-              <a href="https://parth-gupta10.github.io/world-mania/" target="_blank" class="card-image hover-overlay">
+              <a href="https://parth-gupta10.github.io/world-mania/" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
                 <img src=".\images\project screenshots\world-mania.png" alt="World Mania screenshot">
               </a>
               <div class="card-text">
@@ -208,20 +232,31 @@
               </div>
             </div>
           </div>
-          <div class="grid-item frontend">
+          <div class="grid-item others">
             <div class="card" onclick="window.open('https://parth-gupta10.github.io/Momo-Town/')">
-              <a href="https://parth-gupta10.github.io/Momo-Town/" target="_blank" class="card-image hover-overlay">
+              <a href="https://parth-gupta10.github.io/Momo-Town/" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
                 <img src=".\images\project screenshots\Momo-Town.png" alt="Momo Town screenshot">
               </a>
               <div class="card-text">
                 <h4 class="card-title">Momo Town</h4>
-                <p class="text-muted">Online food delivery website for local restaurants</p>
+                <p class="text-muted">Online food ordering website for local restaurants.</p>
               </div>
             </div>
           </div>
-          <div class="grid-item frontend landing-page">
+          <div class="grid-item react">
+            <div class="card" onclick="window.open('https://parth-gupta10.github.io/weather-up/')">
+              <a href="https://parth-gupta10.github.io/weather-up/" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
+                <img src=".\images\project screenshots\weather-up.png" alt="Fylo screenshot">
+              </a>
+              <div class="card-text">
+                <h4 class="card-title">Weather Up</h4>
+                <p class="text-muted">Web app to display current weather and daily forecast for 3 days.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item others">
             <div class="card" onclick="window.open('https://parth-gupta10.github.io/tindog/')">
-              <a href="https://parth-gupta10.github.io/tindog/" target="_blank" class="card-image hover-overlay">
+              <a href="https://parth-gupta10.github.io/tindog/" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
                 <img src=".\images\project screenshots\tindog.png" alt="Tindog screenshot">
               </a>
               <div class="card-text">
@@ -232,7 +267,7 @@
           </div>
           <div class="grid-item full-stack">
             <div class="card" onclick="window.open('http://dtu-auv.herokuapp.com/index.html')">
-              <a href="http://dtu-auv.herokuapp.com/index.html" target="_blank" class="card-image hover-overlay">
+              <a href="http://dtu-auv.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
                 <img src=".\images\project screenshots\auv.png" alt="DTU-AUV screenshot">
               </a>
               <div class="card-text">
@@ -241,69 +276,36 @@
               </div>
             </div>
           </div>
-          <div class="grid-item frontend game">
-            <div class="card" onclick="window.open('')">
-              <a href="#" target="_blank" class="card-image hover-overlay">
-                <img src=".\images\project screenshots\simon-game.png" alt="Simon Game screenshot">
+          <div class="grid-item others">
+            <div class="card" onclick="window.open('http://jyotishiapp.in/')">
+              <a href="http://jyotishiapp.in/" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
+                <img src=".\images\project screenshots\jyotishi.png" alt="Huddle screenshot">
               </a>
               <div class="card-text">
-                <h4 class="card-title">Simon Game</h4>
-                <p class="text-muted">Simon Game</p>
+                <h4 class="card-title">Jyotishi App</h4>
+                <p class="text-muted">Landing Page for Jyotishi App</p>
               </div>
             </div>
           </div>
-          <div class="grid-item frontend game">
+          <div class="grid-item others">
             <div class="card" onclick="window.open('')">
-              <a href="#" target="_blank" class="card-image hover-overlay">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
                 <img src=".\images\project screenshots\drum-kit.png" alt="Drum Kit screenshot">
               </a>
               <div class="card-text">
                 <h4 class="card-title">Drum Kit</h4>
-                <p class="text-muted">Drum Kit</p>
+                <p class="text-muted">Open 'N' Play 😁</p>
               </div>
             </div>
           </div>
-          <div class="grid-item frontend landing-page">
-            <div class="card" onclick="window.open('https://parth-gupta10.github.io/huddle-landing-page-with-alternating-feature-blocks/')">
-              <a href="https://parth-gupta10.github.io/huddle-landing-page-with-alternating-feature-blocks/" target="_blank" class="card-image hover-overlay">
-                <img src=".\images\project screenshots\huddle.png" alt="Huddle screenshot">
+          <div class="grid-item others">
+            <div class="card" onclick="window.open('')">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="card-image hover-overlay">
+                <img src=".\images\project screenshots\simon-game.png" alt="Simon Game screenshot">
               </a>
               <div class="card-text">
-                <h4 class="card-title">Huddle</h4>
-                <p class="text-muted">Landing Page for Huddle</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item frontend landing-page">
-            <div class="card" onclick="window.open('https://parth-gupta10.github.io/fylo-landing-page/')">
-              <a href="https://parth-gupta10.github.io/fylo-landing-page/" target="_blank" class="card-image hover-overlay">
-                <img src=".\images\project screenshots\fylo.png" alt="Fylo screenshot">
-              </a>
-              <div class="card-text">
-                <h4 class="card-title">Fylo</h4>
-                <p class="text-muted">Landing Page for Fylo</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item full-stack">
-            <div class="card">
-              <a href="#" target="_blank" class="card-image hover-overlay">
-                <img src=".\images\project screenshots\fylo.png" alt="Fylo screenshot">
-              </a>
-              <div class="card-text">
-                <h4 class="card-title">Project Title</h4>
-                <p class="text-muted">Something about project </p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item full-stack">
-            <div class="card">
-              <a href="#" target="_blank" class="card-image hover-overlay">
-                <img src=".\images\project screenshots\fylo.png" alt="Fylo screenshot">
-              </a>
-              <div class="card-text">
-                <h4 class="card-title">Project Title</h4>
-                <p class="text-muted">Something about project </p>
+                <h4 class="card-title">Simon Game</h4>
+                <p class="text-muted">This game is the online version of the Simon electronic game.</p>
               </div>
             </div>
           </div>
@@ -320,9 +322,10 @@
       </script>
     </p>
     <p>
-      <a class="socialIcon" href="mailto:parth1716@gmail.com" target="_blank"><span><i class="fas fa-envelope"></i></span></a>
-      <a class="socialIcon" href="https://linkedin.com/in/parth-gupta-6754871a4" target="_blank"> <span><i class="fab fa-linkedin-in"></i></span></a>
-      <a class="socialIcon" href="https://github.com/Parth-Gupta10" target="_blank"> <span><i class="fab fa-github"></i></span></a>
+      <a class="socialIcon" href="mailto:parth1716@gmail.com" target="_blank" rel="noopener noreferrer"><span><i class="fas fa-envelope"></i></span></a>
+      <a class="socialIcon" href="https://linkedin.com/in/parth-gupta-6754871a4" target="_blank" rel="noopener noreferrer"> <span><i class="fab fa-linkedin-in"></i></span></a>
+      <a class="socialIcon" href="https://github.com/Parth-Gupta10" target="_blank" rel="noopener noreferrer"> <span><i class="fab fa-github"></i></span></a>
+      <a class="socialIcon" href="https://twitter.com/Pg_1003" target="_blank" rel="noopener noreferrer"> <span><i class="fab fa-twitter"></i></span></a>
     </p>
   </footer>
 

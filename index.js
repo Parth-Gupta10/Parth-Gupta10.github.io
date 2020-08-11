@@ -1,5 +1,14 @@
 let darkModeActive = false;
 
+let w = window.innerWidth;
+let txt;
+
+if (w < 450) {
+  txt = '<i class="fas fa-moon"></i>'
+  $('.dark').empty();
+  $('.dark').append(txt);
+}
+
 function checkDarkMode() {
   var linkColor = $(".dark").css("color");
   if (linkColor == "rgb(17, 21, 23)") {
@@ -19,6 +28,12 @@ function darkMode() {
     $("#expSection, footer").addClass("expSectionDark");
     $(".card").addClass("cardDark");
     $(".text-muted").addClass("text-muted-dark");
+    if (w < 450) {
+      txt = '<i class="fas fa-sun"></i>'
+      $('.dark').empty();
+      $('.dark').append(txt);
+      console.log(darkModeActive);
+    }
 
   } else if (darkModeActive == true) {
 
@@ -27,6 +42,13 @@ function darkMode() {
     $("#expSection, footer").removeClass("expSectionDark");
     $(".card").removeClass("cardDark");
     $(".text-muted").removeClass("text-muted-dark");
+
+    if (w < 450) {
+      txt = '<i class="fas fa-moon"></i>'
+      $('.dark').empty();
+      $('.dark').append(txt);
+      console.log(darkModeActive);
+    }
   }
 }
 
@@ -61,6 +83,7 @@ $(window).on('load', function() {
       var hash = this.hash;
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      console.log($(hash).offset().top);
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function() {
@@ -84,7 +107,7 @@ $(window).on('load', function() {
         $(".experienceTypewriter").addClass('typewriter');
       }
     },
-    offset: '80%'
+    offset: '70%'
   });
 
   var waypoint = new Waypoint({
@@ -96,7 +119,7 @@ $(window).on('load', function() {
         $(".projectTypewriter").addClass('typewriter');
       }
     },
-    offset: '90%'
+    offset: '70%'
   });
 
   let btns = $(".btn-toolbar button");

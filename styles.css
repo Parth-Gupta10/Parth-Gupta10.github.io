@@ -58,7 +58,7 @@ a:hover {
   background-color: #fcf8e8;
   position: relative;
   margin: 0.5% 0 0 0;
-  padding: 8% 0 2% 0;
+  padding: 8% 0 0 0;
 }
 
 .profileImgDiv {
@@ -108,7 +108,7 @@ a:hover {
 /* *********************************** Experience Section *************************************/
 #expSection {
   position: relative;
-  top: 90px;
+  top: 100px;
   background-color: #ecdfc8;
   padding: 3.5% 0 7% 0;
 }
@@ -402,15 +402,16 @@ a:hover {
   .navbar-brand{
     font-size: 1.2rem;
     top: 9px;
-    right: 35%;
+    right: 30%;
   }
 
   .dark{
     font-size: 0.8rem;
+    top: 3.6%
   }
 
   .profileImg{
-    width: 40%;
+    width: 50%;
     margin-top: 50px;
   }
 
@@ -427,8 +428,14 @@ a:hover {
     display: none;
   }
 
+  #expSection{
+    top: 0;
+    padding: 15% 0 8% 0;
+  }
+
   #projectSection{
-    padding: 3.5% 0 20% 0;
+    top: 0;
+    padding: 12.5% 0 20% 0;
   }
 
   .btn-group .btn{
